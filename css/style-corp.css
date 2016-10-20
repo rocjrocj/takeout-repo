@@ -1,0 +1,163 @@
+/* CSS Document */
+
+
+.corp_main_content {
+	/*background-image: url(/images/omiar.png);
+	background-repeat: no-repeat;*/
+	height: 465px;
+	/*background-position: 575px bottom*/
+	text-align: center;
+}
+.corp_main_content:after {
+	content: '';
+	display: block;
+	width: 1226px;
+	height: 1px;
+	background-color: #C3C3C3;
+	margin: 40px auto
+}
+
+@media screen and (max-width:1200px) {
+.corp_main_content {
+	background-position: 415px bottom
+}
+}
+
+@media screen and (max-width:992px) {
+.corp_main_content {
+	background-position: 316px bottom;
+	height: 535px
+}
+}
+
+@media screen and (max-width:767px) {
+.corp_main_content {
+	background-image: none;
+	height: auto
+}
+}
+.corp_main_content .main_text {
+	margin-top: 140px
+}
+
+@media screen and (max-width:992px) {
+.corp_main_content .main_text {
+	margin-top: 90px
+}
+}
+
+@media screen and (max-width:767px) {
+.corp_main_content .main_text {
+	text-align: center;
+	margin-top: 45px
+}
+}
+.corp_main_content .main_text h2 {
+	font-family: montserrat_bold, sans-serif;
+	font-weight: 700;
+	font-size: 48px;
+	text-transform: none
+}
+
+@media screen and (max-width:992px) {
+.corp_main_content .main_text h2 {
+	font-size: 38px
+}
+}
+
+@media screen and (max-width:767px) {
+.corp_main_content .main_text h2 {
+	margin-bottom: 20px
+}
+}
+.corp_main_content .main_text h2 span {
+	color: #f1560e
+}
+.corp_main_content .main_text h2 span:after {
+	content: "";
+	position: absolute;
+	display: inline-block;
+	top: -35px;
+	background: url(/images/corp_sprite.png) -2px -161px no-repeat;
+	height: 50px;
+	width: 147px;
+	right: 50px
+}
+
+@media screen and (max-width:992px) {
+.corp_main_content .main_text h2 span:after {
+	right: 0
+}
+}
+
+@media screen and (max-width:767px) {
+.corp_main_content .main_text h2 span:after {
+	display: none
+}
+}
+.corp_main_content .main_text p {
+	font-family: OpenSans_reg, sans-serif;
+	font-weight: 400;
+	font-size: 19px;
+	color: #343434
+}
+.corp_main_content .corp_quote {
+	padding-top: 260px;
+	padding-left: 220px;
+	font-family: OpenSans_reg, sans-serif;
+	font-weight: 400
+}
+
+@media screen and (max-width:1200px) {
+.corp_main_content .corp_quote {
+	padding-left: 165px
+}
+}
+
+@media screen and (max-width:992px) {
+.corp_main_content .corp_quote {
+	padding-top: 460px;
+	padding-left: 0;
+	padding-right: 290px
+}
+}
+
+@media screen and (max-width:767px) {
+.corp_main_content .corp_quote {
+	padding: 0;
+	text-align: center;
+	margin-top: 15px
+}
+}
+.corp_main_content .corp_quote .quote_author {
+	font-size: 12px
+}
+.corp_main_content .corp_quote .quote_author:before {
+	content: "\201D";
+	display: block;
+	color: #f5f5f5;
+	font-size: 190px;
+	position: absolute;
+	right: 29px;
+	top: 300px
+}
+
+@media screen and (max-width:1200px) {
+.corp_main_content .corp_quote .quote_author:before {
+	right: 0;
+	top: 310px
+}
+}
+
+@media screen and (max-width:992px) {
+.corp_main_content .corp_quote .quote_author:before {
+	right: 410px;
+	top: 410px
+}
+}
+
+@media screen and (max-width:767px) {
+.corp_main_content .corp_quote .quote_author:before {
+	display: none
+}
+}

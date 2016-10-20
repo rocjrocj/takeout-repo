@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Takeout Central | Be a Hero!</title>
+
+<!-- Bootstrap -->
+<link href="css/bootstrap.css" rel="stylesheet">
+
+<link rel='stylesheet' type='text/css' href='/css/style_v1.1.css'/>
+<link rel="stylesheet" type="text/css" href="css/style-corp.css">
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+
+		<div id='login_box' style="display: none;">
+			<div class='container'>
+				<div class='row'>
+					
+					<div class='col-sm-6 login_account'>
+						
+						<h1>Login <a href='#' class='close-login-box login_function'><i class='fa fa-times'></i></a></h1>
+						
+						<div class='row input_row'>
+							<div class='col-lg-3 col-xs-4 login_email'>
+								<p>Email</p>
+							</div>
+							<div class='col-lg-9 col-xs-8'>
+								<input type='text' name='login' id='loginUser' value='' placeholder='enter your email address' class='email_input'>
+							</div>
+						</div>
+						
+						<div class='row input_row'>
+							<div class='col-lg-3 col-xs-4 login_passowrd'>
+								<p>Password</p>
+							</div>
+							<div class='col-lg-9 col-xs-8'>
+								<input placeholder='enter your password' type='password' name='password' id='loginPass' onkeydown='{if (event.keyCode===13){login();}}' class='password_input'>
+							</div>
+						</div>
+						
+						<div class='row'>
+							<div class='col-lg-offset-3 col-lg-4 col-xs-offset-4 col-xs-6'>
+								<input id='remember' class='remember' type='checkbox'><label for='remember' style='color:white;'> remember me</label>
+							</div>
+						</div>
+
+						<div class='row'>
+							<div class='col-lg-offset-3 col-lg-9 col-xs-offset-4 col-xs-8'>
+								<div class='login_button2 takeout_button' onclick='login();'>
+									<a href='javascript:void(0);'>Login</a>
+								</div>
+								<a class='i_forgot' href='/customerservice.pl'>I FORGOT MY PASSWORD</a>
+								<div class='login_error'></div>
+							</div>
+						</div>
+
+					</div> <!-- end col-sm-6 -->
+
+					<div class='col-sm-6 create_account'>
+						
+						<h1>Create Account</h1>
+						
+						<div class='row input_row'>
+							<div class='col-lg-3 col-xs-4 login_email'>
+								<p>Email</p>
+							</div>
+							<div class='col-lg-9 col-xs-8'>
+								<input placeholder='enter your email address' maxlength=50 id='createUser' class='email_input' onchange='checkUserId();' onkeyup="document.getElementById('create-new').style.visibility='hidden';">
+							</div>
+						</div>
+						
+						<div class='row input_row'>
+							<div class='col-lg-3 col-xs-4 login_passowrd'>
+								<p>Password</p>
+							</div>
+							<div class='col-lg-9 col-xs-8'>
+								<input placeholder='enter your password' type='password' maxlength=30 id='createPass' class='password_input' onchange='checkMatch();'>
+							</div>
+						</div>
+						
+						<div class='row input_row'>
+							<div class='col-lg-3 col-xs-4 login_passowrd'>
+								<p class='confirm'>Confirm <br /><span>Password</span></p>
+							</div>
+							<div class='col-lg-9 col-xs-8'>
+								<input placeholder='one more time please' type='password' maxlength=30 id='confirmPass' class='password_input' onfocus='checkMatch();' onkeyup='checkMatch();' onchange='checkMatch();'>
+							</div>
+						</div>
+
+						<div class='row'>
+							<div class='col-lg-offset-3 col-lg-4 col-xs-offset-4 col-xs-6'>
+								<input id='remnew' class='remember' type='checkbox'><label for='remnew' style='color:white;'> remember me</label>
+							</div>
+						</div>
+						
+						<div class='row'>
+							<div class='col-lg-offset-3 col-lg-9 col-xs-offset-4 col-xs-8'>
+								<div id='create-new' class='create_button takeout_button' onclick='createNew();'>
+									<a href='javascript:void(0);'>Create my account</a>
+								</div>
+								<div class='create_error'></div>
+							</div>
+						</div>
+
+					</div> <!-- end col-sm-6 -->
+					
+					<!--<div class='bottom_buttons'>
+						<div class='signUp_button login_function'><a href='javascript:void(0);'>Create Account</a></div>
+						<div class='login_button login_function'><a href='javascript:void(0);'>LogIn</a></div>
+					</div>-->
+				
+				</div>  <!-- end row -->
+			</div> <!-- end container -->
+		</div> <!-- end login_box -->
+		
+		
+		
+			<div class='white_overlay'></div>
+
+		<script src='/js/login_v1.2.js' type='text/javascript'></script>
+	
+	<div class='mobile_nav'>
+		<div class='navbar-header'>
+			<button type='button' class='navbar-toggle collapsed' data-toggle='collapse' data-target='.navbar-collapse'>
+				<span class='sr-only'>Toggle navigation</span>
+				<span class='icon-bar'></span>
+				<span class='icon-bar'></span>
+				<span class='icon-bar'></span>
+			</button>
+			<a class='navbar-brand' href='/'>TAKEOUT CENTRAL</a>
+		</div>
+		<div class='navbar-collapse collapse'>
+			<ul class='nav navbar-nav'>
+				<!--<li><a href='/giftcards.pl'>Gift Cards</a></li>
+				<li><a href='/corpAccounts.pl'>Group Orders</a></li>
+				<li><a href='/driver-landing.pl'>Drivers</a></li>
+				<li><a href='/restaurant-landing.pl'>Restaurants</a></li>-->
+				<li><a href='javascript:void(0);' class='login_function'>Login or Sign Up</a></li>
+			</ul>
+		</div><!--/.nav-collapse -->
+	</div>
+	
+<header id='header' class='homepage_header driver_header'>
+	<div class='container'>
+
+			<div class='login' id='loginLink'>
+				<div class='signUp_button login_function'><a href='javascript:void(0);'>Sign Up</a></div>
+				<div class='login_button login_function'><a href='javascript:void(0);'>LogIn</a></div>
+			</div>
+			<ul class='header_login_area' id='logoutLink' style='display:none;'>
+				<li class='loginInfo'>
+					<h3>
+						<a id='loginName' href='/edit-profile.pl'>Welcome! |</a>
+					</h3>
+				</li>
+				<li>
+					<a class='header_login' href='/logout.pl'>
+						Logout
+					</a>
+				</li>
+			</ul>
+	
+		<div class='nave'>
+			<div class='logo'>
+				<a href='https://www.takeoutcentral.com/'><img src='/images/logo.png' alt='Takeout Central Logo'></a>
+			</div>
+			<div class='nav_container'>
+				
+				<!--<div class='nav_item'><a href='#'>gift cards</a></div>
+				<div class='nav_item'><a href='/corpAccounts.pl'>corporate orders</a></div>
+				<div class='nav_item'><a href='/driver-landing.pl'>drivers</a></div>
+				<div class='nav_item'><a href='/restaurant-landing.pl'>restaurant partners</a></div>-->
+			</div>
+		</div><!--end nav row-->
+
+		<div class='row title ' >
+			<div class='col-sm-12'><h1>For businesses with a lot<br>on their plate.</h1></div>
+			<!--<div class='col-sm-12'><h3>Be your own boss and become a delivery hero.</h3></div>-->
+		</div><!--end title row-->
+	</div>
+</header>
+
+
+
+
+		<div class='row clearfix'>
+			<div class='col-xs-12'>
+				<h1 class='section_title'>
+				Corporate meals without the <span>heartburn.</span>
+				</h1> <!--  .section_title -->
+			</div> <!--  .col-xs-12 -->
+		</div> <!--  .row clearfix -->
+		
+		
+		
+		
+		
+
+	<div class='corp_main_content container'>
+		<div class='row'>
+			<div class='col-sm-12 main_text'>
+				<!--<h2>Corporate meals without the <span>heartburn.</span></h2>-->
+				<h3>Save money, minimize paperwork and most importantly, keep your people happy, well-fed and productive.</h3>
+				<p>Fact: Busy workers get hungry, and clients appreciate meetings with benefits.</p>
+				<p>Having tasty meals delivered combines business and pleasure in a way that spells R.O.I.</p>
+				<p>Your employees will save time and maintain focus, and your clients will eat it up. The icing on the cake? Takeout Central will send you a single monthly invoice with detailed billing information that eliminates time-consuming expense reports and laborious reimbursement processes. It’s a steady diet of awesome that keeps everyone happy – including bean counters.</p>
+			</div>
+			<!--<div class='col-md-5'>
+				<div class='driver_quote'>
+					<p>&quot;Takeout Central&rsquo;s custom app ensures I get meals where they belong quickly and hassle free.&quot;</p>
+					<p class='quote_author'>-Omair, Delivery Hero</p>
+				</div>
+				
+			</div>-->
+		</div>
+
+	</div>
+
+
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="js/jquery-1.11.3.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/bootstrap.js"></script>
+</body>
+</html>

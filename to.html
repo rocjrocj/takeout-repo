@@ -1,0 +1,386 @@
+
+		<!DOCTYPE HTML>
+		<html lang='en'>
+		<head>
+
+			<meta charset='utf-8'>
+
+			<meta name='keywords' content='food delivery, restaurant delivery, Raleigh, Durham, Chapel Hill, Greensboro, Winston-Salem, Fuquay-Varina, food delivery service, restaurant delivery service, restaurants, food, delivery food, delivery restaurants, order food online, online ordering, local food delivery, Takeout Central, Take-Out Central'>
+
+			<meta name='description' content='Food Delivery from the best local restaurants in Raleigh, Durham, Greensboro, Winston-Salem, Fuquay-Varina, and Chapel Hill, NC to homes and businesses.  Order Online!'>
+
+			<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+			<link rel='stylesheet' type='text/css' href='/css/style_v1.1.css'/>
+			<link href='//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css' rel='stylesheet' integrity='sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1' crossorigin='anonymous'>
+
+			<link rel='shortcut icon' href='/favicon.ico' type='image/x-icon'>
+
+			<script src='//code.jquery.com/jquery-1.12.3.min.js' type='text/javascript'></script>
+			<script src='/js/jquery.browser.min.js' type='text/javascript'></script>
+			<script src='/js/jqtools_1.2.7.min.js' type='text/javascript'></script>
+				
+			<script src='//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js' crossorigin='anonymous'></script>
+	
+<TITLE>Takeout Central | Be a Hero!</TITLE>
+<script src='//ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js'></script>
+<script src='/js/jquery.selectBoxIt.min.js'></script>
+
+	<!-- HTML5 Shiv and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		<script src='/js/html5shiv-3.7.3.min.js'></script>
+		<script src='/js/respond-1.4.2.min.js'></script>
+	<![endif]-->
+	
+			<!--Google Analytics Code-->
+			<script type='text/javascript'>
+			  var _gaq = _gaq || [];
+			  _gaq.push(['_setAccount', 'UA-37712971-1']);
+			  _gaq.push(['_trackPageview']);
+
+			  (function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			  })();
+
+			</script>
+			<!--END Google Analytics Code-->
+			
+<script type='text/javascript'>
+
+	function showAmt(amount) {
+		$('#giftCardAmt').html('$'+amount);
+	}
+
+	$(document).ready(function() {
+			$('select').selectBoxIt();
+	});
+
+	function driverSignup(){
+		var ajaxRequest;
+		var ajaxResponse;
+		var name = document.getElementById('your_name').value;
+		var email = document.getElementById('email').value;
+		var phone = document.getElementById('phone').value;
+		var city = document.getElementById('city').value;
+		var	query = 'mode=driverSignup&amp;name=' + name + '&amp;email=' + email + '&amp;phone=' + phone + '&amp;city=' + city;
+
+		if (window.XMLHttpRequest){
+			ajaxRequest = new XMLHttpRequest();
+		}
+		else {
+			ajaxRequest = new ActiveXObject("Microsoft.XMLHTTP");
+		}
+
+		ajaxRequest.onreadystatechange = function(){
+			if(ajaxRequest.readyState == 4 && ajaxRequest.status==200){
+				ajaxResponse = eval('(' +ajaxRequest.responseText+ ')');
+
+				if (ajaxResponse.errors) {
+					var errorMsg = "We will be unable to respond to your message for the following reason:\n";
+					for (var eachError in ajaxResponse.errors) {
+						errorMsg += '\n - ' + ajaxResponse.errors[eachError] + '\n';
+					}
+					alert(errorMsg);
+					return false;
+				}
+				else if (ajaxResponse.success) {
+					alert(ajaxResponse.success);
+					return true;
+				}
+
+			} // end waiting for response
+		}
+
+		ajaxRequest.open('POST','driver-landing.pl',true);
+		ajaxRequest.setRequestHeader('Content-type','application/x-www-form-urlencoded');
+		ajaxRequest.send(query);
+	}
+</script>
+
+</head>
+
+<body>
+
+		
+		<div id='login_box'>
+			<div class='container'>
+				<div class='row'>
+					
+					<div class='col-sm-6 login_account'>
+						
+						<h1>Login <a href='#' class='close-login-box login_function'><i class='fa fa-times'></i></a></h1>
+						
+						<div class='row input_row'>
+							<div class='col-lg-3 col-xs-4 login_email'>
+								<p>Email</p>
+							</div>
+							<div class='col-lg-9 col-xs-8'>
+								<input type='text' name='login' id='loginUser' value='' placeholder='enter your email address' class='email_input'>
+							</div>
+						</div>
+						
+						<div class='row input_row'>
+							<div class='col-lg-3 col-xs-4 login_passowrd'>
+								<p>Password</p>
+							</div>
+							<div class='col-lg-9 col-xs-8'>
+								<input placeholder='enter your password' type='password' name='password' id='loginPass' onkeydown='{if (event.keyCode===13){login();}}' class='password_input'>
+							</div>
+						</div>
+						
+						<div class='row'>
+							<div class='col-lg-offset-3 col-lg-4 col-xs-offset-4 col-xs-6'>
+								<input id='remember' class='remember' type='checkbox'><label for='remember' style='color:white;'> remember me</label>
+							</div>
+						</div>
+
+						<div class='row'>
+							<div class='col-lg-offset-3 col-lg-9 col-xs-offset-4 col-xs-8'>
+								<div class='login_button2 takeout_button' onclick='login();'>
+									<a href='javascript:void(0);'>Login</a>
+								</div>
+								<a class='i_forgot' href='/customerservice.pl'>I FORGOT MY PASSWORD</a>
+								<div class='login_error'></div>
+							</div>
+						</div>
+
+					</div> <!-- end col-sm-6 -->
+
+					<div class='col-sm-6 create_account'>
+						
+						<h1>Create Account</h1>
+						
+						<div class='row input_row'>
+							<div class='col-lg-3 col-xs-4 login_email'>
+								<p>Email</p>
+							</div>
+							<div class='col-lg-9 col-xs-8'>
+								<input placeholder='enter your email address' maxlength=50 id='createUser' class='email_input' onchange='checkUserId();' onkeyup="document.getElementById('create-new').style.visibility='hidden';">
+							</div>
+						</div>
+						
+						<div class='row input_row'>
+							<div class='col-lg-3 col-xs-4 login_passowrd'>
+								<p>Password</p>
+							</div>
+							<div class='col-lg-9 col-xs-8'>
+								<input placeholder='enter your password' type='password' maxlength=30 id='createPass' class='password_input' onchange='checkMatch();'>
+							</div>
+						</div>
+						
+						<div class='row input_row'>
+							<div class='col-lg-3 col-xs-4 login_passowrd'>
+								<p class='confirm'>Confirm <br /><span>Password</span></p>
+							</div>
+							<div class='col-lg-9 col-xs-8'>
+								<input placeholder='one more time please' type='password' maxlength=30 id='confirmPass' class='password_input' onfocus='checkMatch();' onkeyup='checkMatch();' onchange='checkMatch();'>
+							</div>
+						</div>
+
+						<div class='row'>
+							<div class='col-lg-offset-3 col-lg-4 col-xs-offset-4 col-xs-6'>
+								<input id='remnew' class='remember' type='checkbox'><label for='remnew' style='color:white;'> remember me</label>
+							</div>
+						</div>
+						
+						<div class='row'>
+							<div class='col-lg-offset-3 col-lg-9 col-xs-offset-4 col-xs-8'>
+								<div id='create-new' class='create_button takeout_button' onclick='createNew();'>
+									<a href='javascript:void(0);'>Create my account</a>
+								</div>
+								<div class='create_error'></div>
+							</div>
+						</div>
+
+					</div> <!-- end col-sm-6 -->
+					
+					<!--<div class='bottom_buttons'>
+						<div class='signUp_button login_function'><a href='javascript:void(0);'>Create Account</a></div>
+						<div class='login_button login_function'><a href='javascript:void(0);'>LogIn</a></div>
+					</div>-->
+				
+				</div>  <!-- end row -->
+			</div> <!-- end container -->
+		</div> <!-- end login_box -->
+
+		<div class='white_overlay'></div>
+
+		<script src='/js/login_v1.2.js' type='text/javascript'></script>
+	
+	<div class='mobile_nav'>
+		<div class='navbar-header'>
+			<button type='button' class='navbar-toggle collapsed' data-toggle='collapse' data-target='.navbar-collapse'>
+				<span class='sr-only'>Toggle navigation</span>
+				<span class='icon-bar'></span>
+				<span class='icon-bar'></span>
+				<span class='icon-bar'></span>
+			</button>
+			<a class='navbar-brand' href='/'>TAKEOUT CENTRAL</a>
+		</div>
+		<div class='navbar-collapse collapse'>
+			<ul class='nav navbar-nav'>
+				<!--<li><a href='/giftcards.pl'>Gift Cards</a></li>
+				<li><a href='/corpAccounts.pl'>Group Orders</a></li>
+				<li><a href='/driver-landing.pl'>Drivers</a></li>
+				<li><a href='/restaurant-landing.pl'>Restaurants</a></li>-->
+				<li><a href='javascript:void(0);' class='login_function'>Login or Sign Up</a></li>
+			</ul>
+		</div><!--/.nav-collapse -->
+	</div>
+	
+<header id='header' class='homepage_header driver_header'>
+	<div class='container'>
+
+			<div class='login' id='loginLink'>
+				<div class='signUp_button login_function'><a href='javascript:void(0);'>Sign Up</a></div>
+				<div class='login_button login_function'><a href='javascript:void(0);'>LogIn</a></div>
+			</div>
+			<ul class='header_login_area' id='logoutLink' style='display:none;'>
+				<li class='loginInfo'>
+					<h3>
+						<a id='loginName' href='/edit-profile.pl'>Welcome! |</a>
+					</h3>
+				</li>
+				<li>
+					<a class='header_login' href='/logout.pl'>
+						Logout
+					</a>
+				</li>
+			</ul>
+	
+		<div class='nave'>
+			<div class='logo'>
+				<a href='https://www.takeoutcentral.com/'><img src='/images/logo.png' alt='Takeout Central Logo'></a>
+			</div>
+			<div class='nav_container'>
+				
+				<!--<div class='nav_item'><a href='#'>gift cards</a></div>
+				<div class='nav_item'><a href='/corpAccounts.pl'>corporate orders</a></div>
+				<div class='nav_item'><a href='/driver-landing.pl'>drivers</a></div>
+				<div class='nav_item'><a href='/restaurant-landing.pl'>restaurant partners</a></div>-->
+			</div>
+		</div><!--end nav row-->
+
+		<div class='row title ' >
+			<div class='col-sm-12'><h1>Don&rsquo;t Just Work Anywhere.<br /> Work Everywhere.</h1></div>
+			<div class='col-sm-12'><h3>Be your own boss and become a delivery hero.</h3></div>
+		</div><!--end title row-->
+	</div>
+</header>
+
+	<div class='driver_input'>
+		<input placeholder='Your Name' id='your_name' class='driver_name'>
+		<input placeholder='Email Address' id='email' class='driver_name'>
+		<input placeholder='Phone Number' id='phone' class='driver_name'>
+		<select id='city' class='driver_city' style='margin-top:20px !important;'>
+			<option value='avl'>Asheville, NC</option>
+			<option value='tto'>Chapel Hill</option>
+			<option value='dto'>Durham, NC</option>
+			<option value='gso'>Greensboro, NC</option>
+			<option value='tys'>Knoxville, TN</option>
+			<option value='rto'>Raleigh, NC</option>
+			<option value='int'>Winston-Salem, NC</option>
+			<option value='fqto'>Fuquay-Varina, NC</option>
+		</select>
+		<div class='become_hero takeout_button' onclick='driverSignup();return false;'>
+			<a href='#'>Become a delivery Hero</a>	
+		</div>
+
+	</div>
+	<div class='driver_main_content container'>
+		<div class='row'>
+			<div class='col-sm-7 main_text'>
+				<h2>Be a Delivery <span>Hero.</span></h2>
+				<p>We&rsquo;re Takeout Central, the tech startup whose service is <strong>service</strong> but whose <strong>product</strong> is delicious restaurant food, delivered fast.</p>
+				<p>We need drivers who know their way around our app and around the area. Choose your own hours, your own tunes and your own income level by taking your buff costomer service skills to a new place: the next one.</p>
+			</div>
+			<div class='col-md-5'>
+				<div class='driver_quote'>
+					<p>&quot;Takeout Central&rsquo;s custom app ensures I get meals where they belong quickly and hassle free.&quot;</p>
+					<p class='quote_author'>-Omair, Delivery Hero</p>
+				</div>
+				
+			</div>
+		</div>
+
+	</div>
+	<div class='four_reasons'>
+		<div class='container'>
+			<div class='row'>
+				<div class='col-sm-3'>
+					<div class='apply_image'></div>
+					<h3>How can<br />I apply?</h3>
+					<p>Fill the form out above to get the application process started.</p>
+				</div>
+				<div class='col-sm-3'>
+					<div class='money_image'></div>
+					<h3>How often<br />do I get Paid?</h3>
+					<p>You will get paid every week.</p>
+				</div>
+				<div class='col-sm-3'>
+					<div class='time_image'></div>
+					<h3>How much do<br />I have to work?</h3>
+					<p>As little or as much as you like. You set your own schedule.</p>
+				</div>
+				<div class='col-sm-3'>
+					<div class='check_box_image'></div>
+					<h3>Are There<br />any Requirements?</h3>
+					<p>You must be 21, have a smartphone and current auto insurance.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+		<div class='footer'>
+			<div class='container'>
+				<div class='row'>
+					<div class='col-sm-2 footer_col'>
+						<p>Discover</p>
+						<a href='/aboutus.pl'>our story</a>
+						<a href='/customerservice.pl'>Contact Us</a>
+						<a href='#'>&nbsp;</a>
+						<!--<a href='#'>Cities</a>
+						<a href='#'>press</a>-->
+					</div>
+					<div class='col-sm-2 footer_col'>
+						<p>Help</p>
+						<a href='/faq.pl'>FAQ</a>
+						<a href='/privacy.pl'>Privacy Policy</a>
+					</div>
+					<div class='col-sm-2 footer_col'>
+						<p>Catering</p>
+						<a href='/corpAccounts.pl'>House Accounts</a>
+						<!--<a href='/groupOrder.pl'>Group Ordering</a>
+						<a href='#'>Catering</a>-->
+					</div>
+					<div class='col-sm-2 footer_col'>
+						<p>Drivers</p>
+						<a href='/driver-landing.pl'>Sign Up</a>
+						<a href='/driver-dashboard.html'>Login</a>
+					</div>
+					<div class='col-sm-2 footer_col'>
+						<p>Restaurants</p>
+						<a href='/restaurant-landing.pl'>Sign Up</a>
+						<a href='/dashboard'>Login</a>
+					</div>
+					<div class='col-sm-2 footer_col'>
+						<p>Social</p>
+						<a href='https://www.facebook.com/deliveryheroes' target='_blank'>Facebook</a>
+						<a href='https://twitter.com/deliveryheroes' target='_blank'>Twitter</a>
+						<a href='https://www.instagram.com/takeoutcentral/' target='_blank'>Instagram</a>
+					</div>
+				</div> <!-- end .row -->
+			</div> <!-- end .container -->
+		</div> <!-- end .footer -->
+
+		<footer id='footer-img'>
+			 <img src='/images/footer_logo.png' alt='Takeout Central logo'>
+		</footer><!-- end #footer -->
+
+
+		</body>
+		</html>
+	
