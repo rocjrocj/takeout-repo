@@ -1,6 +1,15 @@
 /* CSS Document */
 
 
+.homepage_header.corp_header {
+	background-image: url(/images/TOC_Hero.jpg);
+	min-height: 450px;
+	margin-bottom: 30px;
+}
+.homepage_header.corp_header .title {
+	margin-top: 58px
+}
+
 .corp_main_content {
 	/*background-image: url(/images/omiar.png);
 	background-repeat: no-repeat;*/
@@ -42,7 +51,7 @@
 .corp_main_content .main_text {
 	/*width: 860px;
 	margin-top: 140px*/
-	margin: 0 auto 45px auto !important;
+	margin: 0 auto 35px auto !important;
 	text-align: center;
 }
 
@@ -188,7 +197,7 @@
 	font-weight: normal;
 	text-align: center;
 	display: block;
-	margin: 40px 0;
+	margin: 20px 0 40px;
 }
 .corp_section_title span {
 	font-size: 41px;
@@ -228,7 +237,10 @@
 	max-width: 1225px;
 	height: 425px;
 	background-color: #f2f4f6;
-	margin-bottom: 60px
+	margin-bottom: 20px
+}
+.corp_elevator .xx_height {
+	height: 450px !important;
 }
 .corp_elevator .elevator_row .img_left {
 	float: left;
@@ -273,7 +285,7 @@
 }
 .corp_elevator .elevator_row a {
 	font-size: 19px;
-	line-height: 27px;
+	line-height: 50px;
 	font-family: OpenSans_bold, sans-serif;
 	font-weight: 400;
 	-webkit-font-smoothing: antialiased;
@@ -287,22 +299,91 @@
 
 
 
-.cta:hover {
+.corp_cta {
+	background-color: transparent;
+	border: 2px solid #fff;
+	padding: 10px 30px;
+	color: #fff;
+	text-transform: uppercase;
+	font-family: montserrat_bold, sans-serif;
+	font-weight: 700;
+	font-size: 15px;
+	outline: 0;
+	transition: all .5s ease-in-out;
+	cursor: pointer;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale
+}
+.corp_cta:hover {
 	background-color: #fff;
 	color: #428bca;
 	text-decoration: none!important
 }
-.cta:focus {
+.corp_cta:focus {
 	border-color: #333
 }
-.cta.cta_blue {
+.corp_cta.cta_blue {
 	border-color: #0083c6;
 	color: #0083c6
 }
-.cta.cta_blue:hover {
+.corp_cta.cta_blue:hover {
 	background-color: #0083c6;
 	color: #fff
 }
 
 
+.corp_cta_banner {
+	background-color: #0078be;
+	padding: 60px 0;
+	text-align: center;
+	color: #fff;
+	margin-top: 25px;
+}
+.corp_cta_banner h2 {
+	color: #fff;
+	font-family: montserrat_bold, sans-serif;
+	font-weight: 700;
+	font-size: 40px;
+	padding: 0!important;
+	margin: 0 0 15px!important;
+	text-transform: none;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	line-height: 50px;
+}
+.corp_cta_banner h2 em {
+	font-family: Pacifico, cursive;
+	font-weight: 400;
+	font-style: normal!important;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-size: 43px
+}
+.corp_cta_banner p {
+	font-family: OpenSans_reg, sans-serif;
+	font-weight: 400;
+	font-size: 19px;
+	padding-bottom: 15px;
+	margin: 0;
+	line-height: 50px;
+}
+.corp_cta_banner p strong {
+	font-family: OpenSans_bold, sans-serif;
+	font-weight: 900;
+	font-size: 19px;
+	padding-bottom: 15px;
+	margin: 0;
+	line-height: 50px;
+}
+.corp_cta_banner p.no_padding {
+	padding: 0
+}
+.corp_cta_banner input[type=text] {
+	display: inline-block;
+	width: 20%;
+	margin-left: 15px
+}
+.corp_cta_banner input[type=text]:first-child {
+	margin-left: 0
+}
 
