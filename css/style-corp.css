@@ -9,6 +9,14 @@
 .homepage_header.corp_header .title {
 	margin-top: 58px
 }
+									
+									@media screen and (max-width:767px) {
+									.homepage_header.corp_header .title h1 {
+										font-size: 40px;
+										line-height: 55px;
+										margin-top: 65px
+									}
+									}
 
 .corp_main_content {
 	/*background-image: url(/images/omiar.png);
@@ -79,7 +87,7 @@
 	text-transform: none;
 	line-height: 34px;
 	margin: 0 auto 20px auto;
-	width: 860px;
+	max-width: 860px;
 }
 									
 									@media screen and (max-width:992px) {
@@ -125,7 +133,7 @@
 	color: #343434;
 	line-height: 27px;
 	margin: 0 auto 15px auto;
-	width: 860px;
+	max-width: 860px;
 }
 .corp_main_content .corp_quote {
 	padding-top: 260px;
@@ -228,6 +236,15 @@
 	color: #f1560e
 }
 
+@media screen and (max-width:767px) {
+.corp_elevator .section_title {
+	font-size: 40px;
+	margin: 0;
+}
+.corp_elevator .section_title span {
+	font-size: 41px;
+}
+}
 
 
 
@@ -235,12 +252,12 @@
 
 .corp_elevator .elevator_row {
 	max-width: 1225px;
-	height: 425px;
+	min-height: 425px;
 	background-color: #f2f4f6;
 	margin-bottom: 20px
 }
 .corp_elevator .xx_height {
-	height: 450px !important;
+	min-height: 450px !important;
 }
 .corp_elevator .elevator_row .img_left {
 	float: left;
@@ -285,7 +302,6 @@
 }
 .corp_elevator .elevator_row a {
 	font-size: 19px;
-	line-height: 50px;
 	font-family: OpenSans_bold, sans-serif;
 	font-weight: 400;
 	-webkit-font-smoothing: antialiased;
@@ -294,6 +310,42 @@
 }
 .corp_elevator_container {
 	padding: 60px;
+}
+
+@media screen and (max-width:767px) {
+.corp_elevator .elevator_row .img_left {
+	float: none;
+	padding-right: 0;
+	text-align: center;
+	align-content: center;
+}
+.corp_elevator .elevator_row .img_right {
+	float: none;
+	padding-left: 0;
+	text-align: center;
+	align-content: center;
+}
+.corp_elevator .elevator_row .img1 {
+	margin-top: 20px;
+}
+.corp_elevator .elevator_row .img2 {
+	margin-top: 20px;
+}
+.corp_elevator .elevator_row .img3 {
+	margin-top: 20px;
+}
+.corp_elevator .elevator_row .num_left {
+	float: none;
+	padding-right: 0;
+	text-align: center;
+	align-content: center;
+}
+.corp_elevator .elevator_row .num_right {
+	float: none;
+	padding-left: 0;
+	text-align: center;
+	align-content: center;
+}
 }
 
 
