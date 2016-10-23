@@ -3604,7 +3604,7 @@ select[multiple].input-group-sm>.form-control, select[multiple].input-group-sm>.
 	line-height: 20px
 }
 
-@media (max-width:767px) {
+@media (max-width:768px) {
 .navbar-nav .open .dropdown-menu {
 	position: static;
 	float: none;
@@ -6411,7 +6411,7 @@ margin:0
 }
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:767px) {
 .login {
 	display: none
 }
@@ -6449,7 +6449,7 @@ margin:0
 	transition: all 1s ease-out
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:767px) {
 .signUp_button {
 	border: 2px solid #f1560e
 }
@@ -6463,7 +6463,7 @@ margin:0
 	transition: all 1s ease-out
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:767px) {
 .login_button {
 	border: 2px solid #0083c6
 }
@@ -6475,7 +6475,7 @@ margin:0
 	text-align: right
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:767px) {
 .header_login_area {
 	text-align: center;
 	float: none;
