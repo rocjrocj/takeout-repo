@@ -6,14 +6,29 @@
 }
 }*/
 
+html {
+	position: relative;
+	width: 100%;
+}
+body {
+	position: relative;
+	width: 100%;
+}
+
 /* begin company/catering modal */
+.corp_modals_wrapper {
+	position: relative;
+	width: 100%;
+}
 .corp_modals {
 	width: 1066px;
-	margin: 60px auto;
 	background: #0183C5;
 	border-radius: 5px;
 	color: #fff;
 	text-align: center;
+	position: absolute;
+	margin: 60px auto;
+	z-index: 999;
 }
 .corp_modals h2 {
 	font-family: montserrat_bold, sans-serif;
@@ -154,6 +169,10 @@
 
 /* begin create company account */
 .corp_create_account {
+	position: absolute;
+	display: none;
+	margin: 60px auto;
+	z-index: 999;
 	/*height: 1065px;*/
 }
 .corp_create_account .cca_hea {
@@ -167,6 +186,10 @@
 /* end create company account */
 /* begin create company account */
 .corp_contact_catering {
+	position: absolute;
+	display: none;
+	margin: 60px auto;
+	z-index: 999;
 	/*height: 670px;*/
 }
 .corp_contact_catering .cca_hea {
