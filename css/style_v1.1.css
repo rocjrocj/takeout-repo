@@ -5685,38 +5685,38 @@ td.visible-print, th.visible-print {
 }
 @font-face {
 	font-family: Pacifico;
-	src: url(/fonts/pacifico-webfont.eot);
-	src: url(/fonts/pacifico-webfont.eot?#iefix) format('embedded-opentype'), url(/fonts/pacifico-webfont.woff) format('woff'), url(/fonts/pacifico-webfont.ttf) format('truetype'), url(/fonts/pacifico-webfont.svg#oxygenbold) format('svg');
+	src: url(../fonts/pacifico-webfont.eot);
+	src: url(../fonts/pacifico-webfont.eot?#iefix) format('embedded-opentype'), url(../fonts/pacifico-webfont.woff) format('woff'), url(../fonts/pacifico-webfont.ttf) format('truetype'), url(../fonts/pacifico-webfont.svg#oxygenbold) format('svg');
 	font-weight: 400
 }
 @font-face {
 	font-family: OpenSans_reg;
-	src: url(/fonts/opensans-regular-webfont.eot);
-	src: url(/fonts/opensans-regular-webfont.eot?#iefix) format('embedded-opentype'), url(/fonts/opensans-regular-webfont.woff) format('woff'), url(/fonts/opensans-regular-webfont.ttf) format('truetype'), url(/fonts/opensans-regular-webfont.svg#oxygenbold) format('svg');
+	src: url(../fonts/opensans-regular-webfont.eot);
+	src: url(../fonts/opensans-regular-webfont.eot?#iefix) format('embedded-opentype'), url(../fonts/opensans-regular-webfont.woff) format('woff'), url(../fonts/opensans-regular-webfont.ttf) format('truetype'), url(../fonts/opensans-regular-webfont.svg#oxygenbold) format('svg');
 	font-weight: 400
 }
 @font-face {
 	font-family: montserrat_reg;
-	src: url(/fonts/montserrat-regular-webfont.eot);
-	src: url(/fonts/montserrat-regular-webfont.eot?#iefix) format('embedded-opentype'), url(/fonts/montserrat-regular-webfont.woff) format('woff'), url(/fonts/montserrat-regular-webfont.ttf) format('truetype'), url(/fonts/montserrat-regular-webfont.svg#oxygenbold) format('svg');
+	src: url(../fonts/montserrat-regular-webfont.eot);
+	src: url(../fonts/montserrat-regular-webfont.eot?#iefix) format('embedded-opentype'), url(../fonts/montserrat-regular-webfont.woff) format('woff'), url(../fonts/montserrat-regular-webfont.ttf) format('truetype'), url(../fonts/montserrat-regular-webfont.svg#oxygenbold) format('svg');
 	font-weight: 400
 }
 @font-face {
 	font-family: montserrat_bold;
-	src: url(/fonts/montserrat-bold-webfont.eot);
-	src: url(/fonts/montserrat-bold-webfont.eot?#iefix) format('embedded-opentype'), url(/fonts/montserrat-bold-webfont.woff) format('woff'), url(/fonts/montserrat-bold-webfont.ttf) format('truetype'), url(/fonts/montserrat-bold-webfont.svg#oxygenbold) format('svg');
+	src: url(../fonts/montserrat-bold-webfont.eot);
+	src: url(../fonts/montserrat-bold-webfont.eot?#iefix) format('embedded-opentype'), url(../fonts/montserrat-bold-webfont.woff) format('woff'), url(../fonts/montserrat-bold-webfont.ttf) format('truetype'), url(../fonts/montserrat-bold-webfont.svg#oxygenbold) format('svg');
 	font-weight: 700
 }
 @font-face {
 	font-family: OpenSans_Bold;
-	src: url(/fonts/opensans-bold-webfont.eot);
-	src: url(/fonts/opensans-bold-webfont.eot?#iefix) format('embedded-opentype'), url(/fonts/opensans-bold-webfont.woff) format('woff'), url(/fonts/opensans-bold-webfont.ttf) format('truetype'), url(/fonts/opensans-bold-webfont.svg#oxygenbold) format('svg');
+	src: url(../fonts/opensans-bold-webfont.eot);
+	src: url(../fonts/opensans-bold-webfont.eot?#iefix) format('embedded-opentype'), url(../fonts/opensans-bold-webfont.woff) format('woff'), url(../fonts/opensans-bold-webfont.ttf) format('truetype'), url(../fonts/opensans-bold-webfont.svg#oxygenbold) format('svg');
 	font-weight: 700
 }
 @font-face {
 	font-family: OpenSans_Light;
-	src: url(/fonts/opensans-light-webfont.eot);
-	src: url(/fonts/opensans-light-webfont.eot?#iefix) format('embedded-opentype'), url(/fonts/opensans-light-webfont.woff) format('woff'), url(/fonts/opensans-light-webfont.ttf) format('truetype'), url(/fonts/opensans-light-webfont.svg#oxygenbold) format('svg');
+	src: url(../fonts/opensans-light-webfont.eot);
+	src: url(../fonts/opensans-light-webfont.eot?#iefix) format('embedded-opentype'), url(../fonts/opensans-light-webfont.woff) format('woff'), url(../fonts/opensans-light-webfont.ttf) format('truetype'), url(../fonts/opensans-light-webfont.svg#oxygenbold) format('svg');
 	font-weight: 300
 }
 .faqstyle {
@@ -6130,7 +6130,7 @@ margin:0
 	margin: 0 12px
 }
 .homepage_breadcrumb {
-	background: url(/images/sprite.png) -248px -198px no-repeat;
+	background: url(../images/sprite.png) -248px -198px no-repeat;
 	width: 22px;
 	height: 19px
 }
@@ -6268,7 +6268,7 @@ margin:0
 	padding: 15px;
 	display: inline-block;
 	cursor: pointer;
-	background-image: url(/images/go_big.png);
+	background-image: url(../images/go_big.png);
 	background-repeat: no-repeat;
 	background-position: center
 }
@@ -6385,7 +6385,7 @@ margin:0
 	margin-top: -25px
 }
 .homepage_header {
-	background-image: url(/images/title_image.jpg);
+	background-image: url(../images/title_image.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	color: #fff;
@@ -6618,7 +6618,7 @@ margin:0
 .nav_my_favorites:before {
 	content: "";
 	display: inline-block;
-	background-image: url(/images/star.png);
+	background-image: url(../images/star.png);
 	height: 30px;
 	width: 30px;
 	background-repeat: no-repeat;
@@ -6647,7 +6647,7 @@ margin:0
 #nav_my_order:before {
 	content: "";
 	display: inline-block;
-	background-image: url(/images/bag.png);
+	background-image: url(../images/bag.png);
 	height: 30px;
 	width: 30px;
 	background-repeat: no-repeat;
@@ -6746,7 +6746,7 @@ margin:0
 	height: 24px;
 	display: inline-block;
 	content: "";
-	background: url(/images/sprite.png) -277px -31px no-repeat;
+	background: url(../images/sprite.png) -277px -31px no-repeat;
 	position: relative;
 	top: 4px;
 	margin-right: 6px
@@ -6850,7 +6850,7 @@ margin:0
 #footer-img {
 	height: 90px;
 	background-color: #fff;
-	background-image: url(/images/footer_texture.png);
+	background-image: url(../images/footer_texture.png);
 	text-align: center;
 	bottom: 0;
 	background-repeat: repeat-x
@@ -6873,7 +6873,7 @@ margin:0
 }
 .owner {
 	color: #fff;
-	background-image: url(/images/owner_background.jpg);
+	background-image: url(../images/owner_background.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	height: 496px;
@@ -7241,7 +7241,7 @@ margin:0
 	text-decoration: none
 }
 #main .menu_type_filter .menu_menu_types .active_menu {
-	background-image: url(/images/menu_background.png)
+	background-image: url(../images/menu_background.png)
 }
 #main .menu_filter {
 	margin-top: 10px
@@ -7293,7 +7293,7 @@ li #main .menu_filter .left_filter:first-child {
 	color: #fff
 }
 #main .menu_main_content {
-	background-image: url(/images/menu_background.png);
+	background-image: url(../images/menu_background.png);
 	padding-bottom: 30px;
 	margin: 0
 }
@@ -7445,33 +7445,33 @@ li #main .menu_filter .left_filter:first-child {
 #main .littlefav {
 	height: 10px;
 	width: 10px;
-	background: url(/images/sprite.png) -16px -74px no-repeat;
+	background: url(../images/sprite.png) -16px -74px no-repeat;
 	margin-left: 2px;
 	display: none
 }
 #main .littleveg {
-	background: url(/images/sprite.png) -44px -74px no-repeat;
+	background: url(../images/sprite.png) -44px -74px no-repeat;
 	height: 10px;
 	width: 10px;
 	margin-left: 2px;
 	display: none
 }
 #main .littlevegan {
-	background: url(/images/sprite.png) -74px -74px no-repeat;
+	background: url(../images/sprite.png) -74px -74px no-repeat;
 	height: 10px;
 	width: 13px;
 	margin-left: 2px;
 	display: none
 }
 #main .littleglut {
-	background: url(/images/sprite.png) -106px -74px no-repeat;
+	background: url(../images/sprite.png) -106px -74px no-repeat;
 	height: 10px;
 	width: 15px;
 	margin-left: 2px;
 	display: none
 }
 #main .littlephoto {
-	background: url(/images/sprite.png) -139px -74px no-repeat;
+	background: url(../images/sprite.png) -139px -74px no-repeat;
 	height: 10px;
 	width: 15px;
 	display: none;
@@ -7484,26 +7484,26 @@ li #main .menu_filter .left_filter:first-child {
 	width: 15px;
 	height: 15px;
 	content: "";
-	background: url(/images/sprite.png) -50px, -30px 0 no-repeat
+	background: url(../images/sprite.png) -50px, -30px 0 no-repeat
 }
 #main .menu_item:hover .littleveg {
-	background: url(/images/sprite.png) -44px -90px no-repeat
+	background: url(../images/sprite.png) -44px -90px no-repeat
 }
 #main .menu_item:hover .littlevegan {
-	background: url(/images/sprite.png) -74px -90px no-repeat
+	background: url(../images/sprite.png) -74px -90px no-repeat
 }
 #main .menu_item:hover .littleglut {
-	background: url(/images/sprite.png) -106px -90px no-repeat
+	background: url(../images/sprite.png) -106px -90px no-repeat
 }
 #main .menu_item:hover .littlephoto {
-	background: url(/images/sprite.png) -139px -90px no-repeat
+	background: url(../images/sprite.png) -139px -90px no-repeat
 }
 #main #filter_fav:before {
 	width: 20px;
 	height: 24px;
 	display: inline-block;
 	content: "";
-	background: url(/images/sprite.png) -12px -30px no-repeat;
+	background: url(../images/sprite.png) -12px -30px no-repeat;
 	position: relative;
 	top: 1px;
 	margin-right: 2px
@@ -7513,20 +7513,20 @@ li #main .menu_filter .left_filter:first-child {
 	height: 24px;
 	display: inline-block;
 	content: "";
-	background: url(/images/sprite.png) -39px -30px no-repeat;
+	background: url(../images/sprite.png) -39px -30px no-repeat;
 	position: relative;
 	top: 2px;
 	margin-right: 2px
 }
 #main #filter_vegi.selected:before, #main #filter_vegi:hover:before {
-	background: url(/images/sprite.png) -39px -3px no-repeat
+	background: url(../images/sprite.png) -39px -3px no-repeat
 }
 #main #filter_glut:before {
 	width: 23px;
 	height: 23px;
 	display: inline-block;
 	content: "";
-	background: url(/images/sprite.png) -69px -32px no-repeat;
+	background: url(../images/sprite.png) -69px -32px no-repeat;
 	position: relative;
 	margin-right: 3px;
 	top: 2px
@@ -7539,39 +7539,39 @@ li #main .menu_filter .left_filter:first-child {
 	height: 23px;
 	display: inline-block;
 	content: "";
-	background: url(/images/sprite.png) -107px -32px no-repeat;
+	background: url(../images/sprite.png) -107px -32px no-repeat;
 	position: relative;
 	top: 2px;
 	margin-right: 2px
 }
 #main #filter_vegan.selected:before, #main #filter_vegan:hover:before {
-	background: url(/images/sprite.png) -107px -3px no-repeat
+	background: url(../images/sprite.png) -107px -3px no-repeat
 }
 #main #filter_photo:before {
 	width: 23px;
 	height: 23px;
 	display: inline-block;
 	content: "";
-	background: url(/images/sprite.png) -145px -31px no-repeat;
+	background: url(../images/sprite.png) -145px -31px no-repeat;
 	position: relative;
 	top: 1px;
 	margin-right: 2px
 }
 #main #filter_photo.selected:before, #main #filter_photo:hover:before {
-	background: url(/images/sprite.png) -145px -3px no-repeat
+	background: url(../images/sprite.png) -145px -3px no-repeat
 }
 #main #hide_item_descriptions:before {
 	width: 17px;
 	height: 24px;
 	display: inline-block;
 	content: "";
-	background: url(/images/sprite.png) -246px -31px no-repeat;
+	background: url(../images/sprite.png) -246px -31px no-repeat;
 	position: relative;
 	top: 2px;
 	margin-right: 2px
 }
 #main #hide_item_descriptions:hover:before {
-	background: url(/images/sprite.png) -246px -4px no-repeat
+	background: url(../images/sprite.png) -246px -4px no-repeat
 }
 
 @media screen and (max-width:992px) {
@@ -7584,13 +7584,13 @@ li #main .menu_filter .left_filter:first-child {
 	height: 24px;
 	display: inline-block;
 	content: "";
-	background: url(/images/sprite.png) -214px -31px no-repeat;
+	background: url(../images/sprite.png) -214px -31px no-repeat;
 	position: relative;
 	top: 2px;
 	margin-right: 2px
 }
 #main #Switch_to_single_column_layout:hover:before {
-	background: url(/images/sprite.png) -214px -4px no-repeat
+	background: url(../images/sprite.png) -214px -4px no-repeat
 }
 #main .back_to_results {
 	text-transform: uppercase;
@@ -7726,7 +7726,7 @@ li #main .menu_filter .left_filter:first-child {
 	height: 36px;
 	display: inline-block;
 	content: "";
-	background: url(/images/sprite.png) -50px -115px no-repeat;
+	background: url(../images/sprite.png) -50px -115px no-repeat;
 	position: absolute;
 	top: 53px;
 	margin-right: 12px;
@@ -7742,7 +7742,7 @@ li #main .menu_filter .left_filter:first-child {
 }
 .price:before {
 	display: inline-block;
-	background: url(/images/sprite.png) -213px -125px no-repeat;
+	background: url(../images/sprite.png) -213px -125px no-repeat;
 	content: "";
 	position: relative;
 	height: 20px;
@@ -7759,7 +7759,7 @@ li #main .menu_filter .left_filter:first-child {
 	clear: none;
 	padding: 0 0 4px 24px;
 	cursor: pointer;
-	background: url(/images/sprite.png) -253px -152px no-repeat;
+	background: url(../images/sprite.png) -253px -152px no-repeat;
 	height: 16px;
 	width: 17px
 }
