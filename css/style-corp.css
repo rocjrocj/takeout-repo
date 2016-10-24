@@ -198,10 +198,10 @@
 }
 @media screen and (max-width:992px) {
 .corp_create_account {
-	margin: 30px auto;
+	margin: 0 auto;
 }
 .corp_contact_catering {
-	margin: 30px auto;
+	margin: 0 auto;
 }
 .h47 {
 	height: 0;
